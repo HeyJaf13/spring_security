@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+</head>
+<table border="1">
+  <caption>Table users1</caption>
+  <tr>
+    <th>User id</th>
+    <th>User name</th>
+    <th>User password</th>
+    <th>User email</th>
+    <th>User city</th>
+  </tr>
+  <tr>
+
+    <td th:text="${user.id}"/>
+    <td th:text="${user.username}"/>
+    <td th:text="${user.password}"/>
+    <td th:text="${user.email}"/>
+    <td th:text="${user.city}"/>
+
+  </tr>
+
+</table>
+
+<br/>
+
+<form action="/logout" method="POST">
+  <button type="submit">Logout</button>
+</form>
+
+</html>
